@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     font-family: "Raleway", sans-serif;
     color: white;
@@ -24,6 +25,20 @@ body, html {
     height: 100%;
     background: url('images/fa9a77f7-643d-4632-9bce-500383e32d3c.jpeg') no-repeat right center/cover;
     z-index: -1;
+    animation: zoomInOut 27s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .title {
