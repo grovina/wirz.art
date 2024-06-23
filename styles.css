@@ -6,7 +6,7 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -26,7 +26,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('images/7e6df78f-d342-4705-beb2-b6eb585048a8.jpeg') no-repeat center center/cover;
+    background: url('images/fa9a77f7-643d-4632-9bce-500383e32d3c.jpeg') no-repeat center center/cover;
     z-index: -1;
 }
 
@@ -35,11 +35,23 @@ body, html {
 }
 
 .title {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.title-large {
     font-size: 4em;
-    font-family: 'Comic Sans', sans-serif;
+}
+
+.title-small {
+    font-size: 1.5em;
+    position: absolute;
+    left: 10px;
+    bottom: -0.8em
 }
 
 .subtitle {
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-top: 135px;
 }
