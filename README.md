@@ -10,4 +10,4 @@ The site is accessible at [wirz.art](https://wirz.art).
 
 ## License
 
-All rights reserved © Dominique Wirz
+Proprietary. All rights reserved. Dominique Wirz
