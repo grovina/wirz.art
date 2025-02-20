@@ -64,3 +64,112 @@ html {
     bottom: 7%;
     right: 4%;
 }
+
+.calendly-widget {
+    position: absolute;
+    bottom: 7%;
+    right: 4%;
+}
+
+.schedule-button {
+    display: inline-block;
+    padding: 16px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    position: relative;
+    min-width: 250px;
+    text-align: center;
+    height: 60px;
+}
+
+.schedule-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.text-en, .text-de {
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    left: 0;
+}
+
+.schedule-button .text-en,
+.schedule-button .text-de {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.services {
+    position: absolute;
+    top: 20%;
+    right: 4%;
+    text-align: right;
+    width: 500px;
+}
+
+.services h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 4em;
+    position: relative;
+    line-height: 1.5;
+}
+
+.services h1 span {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.services-line {
+    position: absolute;
+    bottom: 18%;
+    right: 4%;
+    width: 250px;
+    text-align: right;
+}
+
+.services-line span {
+    display: block;
+    position: absolute;
+    width: 250px;
+    right: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.services-line .text-en {
+    font-size: 0.75em;
+}
+
+.services-line .text-de {
+    font-size: 0.9em;
+}
+
+.text-en {
+    animation: toggleVisibility 6s infinite;
+}
+
+.text-de {
+    animation: toggleVisibility 6s infinite reverse;
+}
+
+@keyframes toggleVisibility {
+    0%, 45% {
+        opacity: 1;
+    }
+    50%, 95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
